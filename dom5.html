@@ -17,7 +17,22 @@
 </body>
 </html>
 <script>
- let 
+   
+  
+  const nameInput = document.getElementById("name");
+  const genderSelect = document.getElementById("gender");
+  const displayElement = document.getElementById("display");
+  const applyButton = document.getElementById("applyButton");
+
+ 
+  applyButton.addEventListener("click", function() {
+    
+    const enteredName = nameInput.value;
+    const selectedGender = genderSelect.value;
+
+    
+    displayElement.textContent = `Entered Name: ${enteredName}, Gender: ${selectedGender}`;
+     });
   
 
 
